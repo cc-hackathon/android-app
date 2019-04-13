@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        android:elevation="3dp"
+        card_view:cardElevation="3dp">
+
+    <LinearLayout
+        android:paddingBottom="14dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Telenor Micro-Finance"
+            android:layout_gravity="center"
+            android:id="@+id/requests_item_requester"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/requests_item_name"
+            android:text="Need CNIC Details for Account Opening"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/requests_item_field"
+            android:text="Fields : (Name , Father Name , Date of Birth)"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/rectangle_rounded_golden"
+                android:textColor="@android:color/white"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/requests_item_reject_button"
+                android:text="Reject"
+              />
+
+            <Button
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rectangle_rounded"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/requests_item_accept_button"
+                android:text="Accept"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
